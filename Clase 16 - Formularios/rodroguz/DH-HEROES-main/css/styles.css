@@ -1,0 +1,100 @@
+/*MAIN*/
+main {
+    padding: 80px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    overflow: scroll;
+}
+
+.card {
+    height: 500px;
+    max-width: 315px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.card__banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 166px;
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+}
+
+.card__image {
+    position: relative;
+    border-radius: 60px;
+    bottom: 70px;
+    left: 65px;
+    height: 120px;
+}
+
+.card__icon {
+    position: relative;
+    bottom: 240px;
+    left: 20px;
+}
+
+.card__description {
+    display: grid;
+    grid-template-rows: 100px 135px 1fr;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--gray);
+    justify-items: center;
+    gap: 10px
+}
+
+.card__description h3 {
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 400;
+    font-size: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+}
+
+.card__description p {
+    overflow: hidden;
+}
+
+.card__description button {
+    background-color: var(--blue);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    width: 120px;
+    align-self: center;
+}
+/*MAIN*/
+
+.floating-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: var(--blue);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    right: 5px;
+    cursor: pointer;
+}
+
+.floating-button a {
+    color: white;
+}

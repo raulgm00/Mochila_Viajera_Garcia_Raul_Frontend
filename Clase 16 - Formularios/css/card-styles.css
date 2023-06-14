@@ -1,0 +1,87 @@
+
+.continer {
+  display: flex;
+  flex-flow: row wrap;
+     justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 50px;
+    /* overflow: scroll; */
+  
+}
+
+.continer .div-1 {
+  width: 300px;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #ccc; /* hace la silueta de caja */
+}
+
+
+.continer .div-1 .div-1-img-corazon{
+  position: relative;
+  z-index: 2;
+}
+
+.continer .div-1 .div-1-img-cabeza{
+    position: relative;
+    bottom: 45px;
+    left: -10px;
+    z-index: 1;
+}
+
+.continer .div-1 .div-1-img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 135px;
+  z-index: 3;
+}
+
+.continer .div-1 .div-personaje {
+  display: flex;
+  justify-content: center;
+  position: relative;
+bottom: 120px;
+}
+
+
+.continer .div-1 .div-leyenda{
+  position: relative;
+  bottom: 100px;
+}
+
+.continer .div-1 .div-btn {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 40px;
+  
+}
+
+.continer .div-1 .div-btn button{
+  color: white;
+  border-radius: 15px;
+  background-color: #00669f;
+  padding: 1em 3em;
+  font-size: 0.8em;
+}
+
+footer {
+  
+  background-color: #00669f;
+  color: white;
+  text-align: center;
+}
+
+
+@media (max-width: 1000px){
+  /*Mis reglas de estilo para*/
+  body{
+    background-color: red;
+  }
+
+}

@@ -1,0 +1,88 @@
+:root{
+    --header-bg-color:#222222;
+    --body-bg-color:#E5E5E5;
+    --body-img-color:#FFFFFF;
+    --options-text-color: #F3F3F3;
+    --red-text-color:#FC200C;
+
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--body-bg-color);
+}
+
+header{
+    background-color: var(--header-bg-color);
+    display: flex;
+    max-width: calc(100% - 30px);
+    padding: 10px 15px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav{
+    max-width: 30%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    color:var(--options-text-color);
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: var(--options-text-color);
+}
+
+.hero{
+    display: flex;
+    padding:35px 19px;
+    justify-content: space-evenly;
+}
+
+.hero > .image1{
+    width: 490px;
+    height: 350px;
+    background-image: url(../assets/delivery.jpg);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.hero > .image2{
+    width: 490px;
+    height: 350px;
+    background-color: var(--body-img-color);
+    padding: 26px 51px;
+    border-radius: 5px;
+}
+
+.image2 > h2{
+    color: var(--red-text-color);
+    padding-bottom: 58px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.image2 > h3{
+    font-size: 1.25em;
+    padding-bottom: 20px;
+}
+
+.image2 > ol > li {
+    line-height: 25px;
+}

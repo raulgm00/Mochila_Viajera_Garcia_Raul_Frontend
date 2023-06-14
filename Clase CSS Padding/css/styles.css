@@ -1,0 +1,39 @@
+/*Resetear valores por default*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* div {
+  border: 1px solid #000000;
+} */
+
+.div-1 {
+  border: 2px solid #000000;
+}
+
+/*Lo centra*/
+.div-2{
+ width: 500px;
+ margin: auto;
+}
+
+.div-3 {
+  border: 5px solid red;
+  border-top-width: 15px;
+  border-top-color: orange;
+  border-top-style: solid;  /* Esta propiedad no es necesaria (se hereda) */
+}
+
+.div-4 {
+  border-color: rgb(26, 181, 124);
+  border-width: 12px;
+  border-style: dotted;
+}
+
+.div-5 {
+  border-color: rgb(144, 43, 43) rgb(144, 43, 43) rgb(144, 43, 43);
+  border-width: 2px 2px 2px;
+  border-style: dotted dotted dotted;
+}

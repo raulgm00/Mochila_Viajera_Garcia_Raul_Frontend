@@ -1,0 +1,15 @@
+/*Resetear valores por default*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.examples {
+ margin: 15px;
+ /* Equivalente a margin: 15px 15px 15px 15px; */
+margin: 20px 10px;
+ /* Equivalente a margin: 20px 10px 20px 10px; */
+margin: 20px 10px 5px;
+ /* Equivalente a margin: 20px 10px 5px 10px; */
+}

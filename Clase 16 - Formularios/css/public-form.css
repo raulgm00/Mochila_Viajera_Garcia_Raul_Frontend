@@ -1,0 +1,73 @@
+/*MAIN */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  .main__form{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 650px;
+    background-color: var(--blue);
+    border-radius: 20px;
+    height: 100%;
+  }
+  
+  .main__title{
+    text-align: center;
+    color: var(--white);
+    padding: 10px 40px;
+  }
+  
+  .main__title h1 {
+    font-size: 2.5rem;    /*Tamaño de lña tipógrafia*/
+    line-height: 2.5rem; /*Especifica la altura de una línea*/
+    font-weight: 300;    /*Adelgasa la grosura del texo*/
+  
+  }
+
+  
+  /*container principal*/
+  .main__form__container{
+    display: grid;
+    color: var(--white);
+    padding: 20px 40px;
+    gap: 10px;
+  }
+  
+  /*conmtenedor formulario & buttom*/
+  .main__form__container form{
+    display: grid;
+    gap: 10px;
+  }
+  
+  
+  
+  /*Labels*/
+  .form__input{
+    display: grid;
+    gap: 5px;
+  }
+
+  /*Seccion de boton*/
+  .section__buttom{
+    background-color: var(--green);
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    justify-self: center;
+    padding: 5px;
+    font-size: 1.1rem;
+  }
+  
+  /*Bordear y quitar margenes de los imputs por medio del id del elemento*/
+  #description, #name, #date, #type, #email, #comment, #password{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+  }

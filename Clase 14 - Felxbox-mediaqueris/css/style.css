@@ -1,0 +1,164 @@
+:root {
+  --header-bg-color: #d1891c;
+  --body-bg-color: #e5e5e5;
+  --body-img-color: #ffffff;
+  --options-text-color: #f3f3f3;
+  --red-text-color: #fc200c;
+  --white-text-color: #ffffff;
+  --blue-king-bg-color: #00669f;
+
+  --profile-img-size: 200px;
+  --profile-img-half: 100px;
+
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Especificacion de BODY*/
+body {
+  background-color: var(--body-bg-color);
+}
+
+/* Especificacion de HEADER*/
+header p {
+  background-color: var(--header-bg-color);
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  color: var(--white-text-color);
+}
+
+header h3 {
+  background-color: var(--blue-king-bg-color);
+  padding: 1rem 2rem;
+  font-size: 2rem; /*Establece el tamaño de una fuente*/
+  color: var(--white-text-color);
+  font-weight: 400; /*Establece qué tan gruesos o delgados deben mostrarse los caracteres del texto en multiplos de 10*/
+  /*Peso al texto -*/
+}
+
+/* Especificacion de MAIN */
+
+.card-container {
+  width: 100%;
+  /*max-width: calc(50% - 120px); Define la anchura máxima de el elemento container */
+  display: flex;
+  flex-flow: column nowrap;
+
+  gap: 40px;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.card-container .card:nth-child(4) {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.card {
+  position: relative;
+  background-color: #f3f3f3;
+  max-width: 350px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px 30px 0 0;
+}
+
+.card .background {
+  width: 100%;
+  /* overflow: hidden; */
+  border-radius: 10px 10px 0 0;
+}
+
+.card .profile {
+  position: absolute;
+  border-radius: 50%;
+  width: var(--profile-img-size);
+  left: calc(50% - var(--profile-img-half));
+  top: var(--profile-img-half);
+}
+
+.card .heart {
+  position: absolute;
+  width: 35px;
+  left: 10px;
+  top: 10px;
+}
+
+.card .card-body {
+  padding: 100px 43px 68px 43px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .card-body .card-body-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.card .card-body .card-body-description {
+  font-size: 0.75rem;
+  margin-bottom: 32px;
+}
+
+.card .card-body button {
+  justify-self: center;
+  background-color: #00669f;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  max-width: 50%;
+  align-self: center;
+}
+
+/*Prueba de ocultar tarjeta*/
+
+/*Reglas de rediseño desde este ancho hacia arriba */
+@media (min-width: 800px) {
+  
+    /*Controla el posicionamiento de las card*/
+    .card-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  /*Controla la visibiulidad de las imagenes 3 de la tarjeta 3 para que solo se vea la img 2 */
+  .card-container .card:nth-child(3) img.profile:nth-child(3){
+    display: none;
+    visibility:hidden;
+    /*visibility:hidden !important; Si lo que queremos es que un elemento permanezca oculto pero que mantenga el espacio que ocupaba usaremos este atributo en nuestro CSS:*/
+  }
+  /*Controla la visibiulidad de la tarjeta No.4  VISIBLE*/
+  .card-container .card:nth-child(4) {
+    visibility: visible ;
+    /*visibility:hidden !important; Si lo que queremos es que un elemento permanezca oculto pero que mantenga el espacio que ocupaba usaremos este atributo en nuestro CSS:*/
+  }
+
+
+
+}
+
+/*Reglas de rediseño desde este ancho hacia abajo  */
+@media (max-width: 800px) {
+  
+    /*Controla el posicionamiento de las card*/
+    .card-container {
+    flex-flow: row wrap;
+  }
+    /*Controla la visibiulidad de las imagenes 3 de la tarjeta 2 para que solo se vea la img 3 */
+  .card-container .card:nth-child(3) img.profile:nth-child(2){
+    display: none;
+    visibility:visible;
+    /*visibility:hidden !important; Si lo que queremos es que un elemento permanezca oculto pero que mantenga el espacio que ocupaba usaremos este atributo en nuestro CSS:*/
+  }
+  /*Controla la visibiulidad de la tarjeta No.4  IMVISIBLE*/
+  .card-container .card:nth-child(4) {
+    visibility: hidden;
+    display: none !important; /*En el caso de lo que queramos sea que el elemento desaparezca y también el espacio que ocupa utilizaremos este atributo en nuestro CSS:*/
+  }
+}

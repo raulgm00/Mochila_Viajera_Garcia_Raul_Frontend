@@ -1,0 +1,196 @@
+/* Reseteo de estilos por default*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+/*Definicion de grid para body*/
+/*Define ocupar las tres seciones principales del html*/
+body {
+    display: grid;
+    grid-template-rows: 80px 1fr 140px;
+    height: 100vh;
+    align-items: center;
+}
+
+
+
+/*Aqui comienza los estilos del menu*/
+.header-nav-container {
+  display: flex;
+  flex-flow: row wrap;
+  background-color:black;
+  justify-content: space-between;
+}
+
+.header-nav-container .letras-logo {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+  position: relative;
+  left: 20px;
+}
+
+.header-nav-container .letras-logo .pizza {
+  color: green;
+}
+
+.header-nav-container .letras-logo .emp {
+  color: white;
+}
+
+.header-nav-container .letras-logo .front {
+  color: red;
+}
+
+.header-nav-container .div-menu {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  position: relative;
+  right: 20px;
+  color: white
+}
+
+.header-nav-container .div-menu nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+
+/*Aqui comineza el body */
+
+.body{
+    height: 900px;
+}
+
+.main .container-doby {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 30px;
+  gap: 30px;
+}
+
+.main .container-doby .card-1 {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5px;
+  padding: 10px;
+  background-image: url(../img/delivery.jpg);
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 490px;
+  /*contornos de tarjeta*/
+  background-color: #f3f3f3;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #ccc;
+}
+
+.main .container-doby .card-1 .texto-1 {
+  color: red;
+}
+
+.main .container-doby .card-1 .texto-2 {
+  color: white;
+}
+
+.main .container-doby .card-1 .texto-3 {
+  color: red;
+}
+
+.main .container-doby .card-2 .der-1 .texto-1 {
+  color: red;
+}
+
+/*Definicion de card-2*/
+
+.main .container-doby .card-2 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 350px;
+  width: 490px;
+  /*contornos de tarjeta*/
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #ccc;
+}
+
+.main .container-doby .card-2 .caja-sup {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+.main .container-doby .card-2 .caja-media{
+    display: flex;
+    position: relative;
+    right: 120px;
+}
+
+.main .container-doby .card-2 .caja-inf {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 90px;
+}
+
+/*Aqui comienza el footer*/
+
+.footer-nav-container {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  background-color: black;
+  justify-content: space-between;
+}
+
+.footer-nav-container .letras-logo {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2em;
+  font-weight: bold;
+  position: relative;
+  right: 20px;
+}
+
+.footer-nav-container .letras-logo .pizza {
+  color: green;
+}
+
+.footer-nav-container .letras-logo .emp {
+  color: white;
+}
+
+.footer-nav-container .letras-logo .front {
+  color: red;
+}
+
+.footer-nav-container .div-menu {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  position: relative;
+  left: 20px;
+}
+
+.footer-nav-container .div-menu nav ul {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+}
+
+.footer-nav-container .div-menu nav ul li {
+  color: white;
+}

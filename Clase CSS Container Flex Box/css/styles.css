@@ -1,0 +1,114 @@
+/*Resetear valores por default*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ div {
+  border: 1px solid #000000;
+} 
+
+header {
+  align-items: center;
+  display: flex;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+section {
+  margin-left: 10px;
+}
+
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-1 div:nth-child(5) {
+  align-self: flex-end;
+}
+
+/***********************************************/
+.container-2 {
+  /*Afectacion a contenido**/
+  display: flex;
+  font-family: Helvetica;
+  font-size: 4em;
+  color: azure;
+  text-align: center;
+  margin-bottom: 15px;
+  /**********/
+  border: 6px solid black;
+}
+
+.item {
+  text-align: center;
+  
+  width: 100px;
+  height: 70px;
+}
+
+.container-2 div:nth-child(1),
+div:nth-child(6) {
+  background-color: #00bfb8;
+}
+
+.container-2 div:nth-child(2),
+div:nth-child(7) {
+  background-color: #8e007e;
+}
+
+.container-2 div:nth-child(3),
+div:nth-child(8) {
+  background-color: #23d0ea;
+}
+
+.container-2 div:nth-child(4) {
+  background-color: #ef8956;
+}
+
+.container-2 div:nth-child(5) {
+  background-color: #060a3d;
+}
+
+.container div:nth-child(6) {
+  align-self : flex-end;
+}
+
+/***********************************************/
+
+.div-1 {
+  border: 2px solid #000000;
+  margin-bottom: 80px;
+}
+
+/* truco para centrar un container*/
+.div-2 {
+  width: 500px;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.div-3 {
+  border: 5px solid red;
+  border-top-width: 15px;
+  border-top-color: orange;
+  border-top-style: solid; /* Esta propiedad no es necesaria (se hereda) */
+  margin-bottom: 80px;
+}
+
+.div-4 {
+  border-color: rgb(26, 181, 124);
+  border-width: 12px;
+  border-style: dotted;
+  margin-bottom: 80px;
+}
+
+.div-5 {
+  border-color: rgb(144, 43, 43) rgb(144, 43, 43) rgb(144, 43, 43);
+  border-width: 2px 2px 2px;
+  border-style: dotted dotted dotted;
+  margin-bottom: 80px;
+}

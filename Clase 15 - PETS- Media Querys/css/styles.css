@@ -1,0 +1,269 @@
+/*Importacion de funetes*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Reseteo de estilos por default*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-monedas {
+  background-color: black;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  height: 20px;
+}
+
+.section-monedas .monedas-opts {
+  display: flex;
+  justify-content: space-around;
+  max-width: 25%;
+  width: 100%;
+}
+
+.header {
+  background-color: #f0a83e;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.header nav ul {
+  display: flex;
+  gap: 15px;
+}
+
+.hero_container {
+  background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
+  display: flex;
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero_container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 25px;
+  border-radius: 5px;
+}
+
+.div_1 {
+  font-size: 32px;
+  background-color: white;
+}
+.div_2 {
+  font-size: 15px;
+}
+
+.div_3 {
+  color: white;
+  padding: 10px 20px;
+  background-color: orange;
+  border: #f0a83e;
+  text-transform: uppercase;
+}
+
+.patita {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+}
+.patita p {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 19px;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 30px 0;
+}
+.productos .card-container{
+    display: flex;
+}
+
+.productos .card-container .card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 5px;  /*Redonde las esquinas de los div */
+    box-shadow: 0 0 15px #ccc; /* hace la silueta de caja */
+    padding: 10px;
+    background-color: #FBFAF4; /*Agrega fondo para abarcar las dos secciones img y texto*/
+    width: 30%;
+    margin: 30px; /*Separacion entre las columnas*/
+}
+
+.productos .card-container .card .precio{
+    color: #f0a83e;
+}
+
+/* Start Contactos*/
+
+.form-contacto{
+    display: flex;
+    flex-direction: column;
+    max-width: 30%; /*se utiliza para establecer el ancho máximo de un elemento especificado*/
+    width: 100%;
+    text-align: center;  /*Alinea el texto del encabezado y los botones*/
+    margin: auto;
+}
+
+.form-contacto h2{
+    font-size: 1.75em;
+    margin-bottom: 1em; /*La unidad em hace referencia al tamaño en puntos de la letra que se está utilizando.*/
+}
+
+.form-contacto input{
+    border: none; /* Quita borde*/
+    border-radius: 15px;
+    background-color: #3C2313;
+    padding: 1em 1em;
+    margin: 1em;
+}
+
+.form-contacto input::placeholder{
+    color: rgba(255, 255, 255, 0.84) /*Agregar color de letra al placeholder del fomrulario*/
+}
+
+.btn-form{
+    margin: 20px 0px;
+    
+}
+
+.btn-form button:first-child{
+    color: white;
+    border-radius: 15px;
+    background-color: grey;
+    border: none;
+    padding: 0.9em 1.5em;
+    font-size: 1.2em;
+
+}
+.btn-form button:last-child{
+    color: white;
+    border-radius: 15px;
+    background-color: orange;
+    border: none;
+    padding: 0.9em 1.5em;
+    font-size: 1.2em;
+    
+}
+
+/*End contactos*/
+/* Inicia la definicion dle banner suscribete*/
+.banner-suscribete{
+    color: white;
+    background-color: #f0a83e;
+}
+
+.banner-suscribete div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 1em 2em;
+}
+
+.banner-suscribete div p{
+    font-size: 1.2em;
+}
+
+.banner-suscribete div form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    width: 80%;
+}
+
+.banner-suscribete div form input{
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    padding: 1em 3em;
+    font-size: 0.8em;
+    max-width: 300px;
+    width: 100%;
+}
+
+.banner-suscribete div form button{
+    color: white;
+    border-radius: 25px;
+    background-color: #3C2313;
+    padding: 1em 3em;
+    font-size: 0.8em;
+}
+
+/*Terminan Suscribete*/
+
+
+/*Especificacion de footer */
+
+footer{
+  background-color: #3C2313;  
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .m-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: calc(80% - 30px);
+    width: 100%;
+    margin: auto;
+}
+
+footer .m-footer .izq{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .m-footer .izq .div-1{
+  display: flex;
+  flex-direction: row;
+}
+
+
+footer .m-footer .izq .div-1 .caja-interna{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+
+
+footer div.m-footer .izq div div > p:last-child {
+    font-size: 0.75em;
+    color: gray;
+}
+
+footer .creditos > p{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 0.5em 1em;
+}
+
+/*End Especificaciond e footer */

@@ -1,0 +1,104 @@
+/*MAIN */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  .main__form{
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    max-width: 700px;
+    background-color: var(--blue);
+    border-radius: 20px;
+    height: 100%;
+  }
+  
+  .main__title{
+    text-align: center;
+    color: var(--white);
+    padding: 10px 40px;
+  }
+  
+  .main__title h1 {
+    font-size: 2.5rem;    /*Tamaño de lña tipógrafia*/
+    line-height: 2.5rem; /*Especifica la altura de una línea*/
+    font-weight: 300;    /*Adelgasa la grosura del texo*/
+  
+  }
+  
+  .main__title p{
+    font-weight: 100;
+  }
+  
+  /*container principal*/
+  .main__form__container{
+    display: grid;
+    color: var(--white);
+    padding: 20px 40px;
+    gap: 10px;
+    grid-template-rows: 1fr min-content;
+  }
+  
+  /*conmtenedor formulario & buttom*/
+  .main__form__container form{
+    display: grid;
+    gap: 10px;
+  }
+  
+  
+  /*seccition group*/
+  .input__group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 20px;
+    padding: 11px;
+  }
+  
+  /*Eliminacion de borde de los grupos*/
+  .input__group fieldset{
+    display: grid;
+    border: none;
+  }
+  
+  
+  /*fieldset*/
+  .form__section{
+    display: grid;
+    gap: 15px;
+    grid-template-rows: min-content min-content 1fr;
+    align-content: space-evenly;
+    
+  }
+  /*Labels*/
+  .form__input{
+    display: grid;
+    gap: 10px;
+  }
+  
+  /*Seccion de checkbox & radio buttom*/
+  .form__multi__options{
+    display: grid;
+    margin: 20px 0px;
+  }
+  
+  /*Seccion de boton*/
+  .section__buttom{
+    background-color: var(--green);
+    border: none;
+    width: 200px;
+    border-radius: 50px;
+    justify-self: center;
+    padding: 20px;
+    font-size: 1.5rem;
+  }
+  
+  /*Bordear y quitar margenes de los imputs por medio del id del elemento*/
+  #description, #name, #date, #type, #email, #comment, #password{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+  }

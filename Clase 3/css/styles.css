@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+
+header{
+background-color: black;
+color: beige;
+display: flex;
+padding: 1em;
+justify-content: space-between;
+}
+
+h1{
+    background-color: rgb(42, 147, 42);
+}
+
+nav{
+    background-color: red;
+}
+
+main{
+background-color: rgb(140, 255, 0);
+color:aliceblue;
+}
+
+footer{
+    background-color: brown;
+    color: aliceblue;
+}
