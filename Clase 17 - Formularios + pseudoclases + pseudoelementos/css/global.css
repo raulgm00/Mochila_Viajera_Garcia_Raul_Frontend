@@ -1,0 +1,157 @@
+/*Seteamos colores base*/
+:root {
+  /*Colore*/
+  --green: #1cd1b0;
+  --blue: #00669F;
+  --gray: #f3f3f3;
+  --dark-blue: #001d2d;
+  --white: #ffffff;
+  --red: #ff0000;
+  --cilueta-caja: #ccc;
+}
+
+/* Reseteo de estilos por default*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* BODY redefinicion de tamaños cajas*/
+body {
+  display: grid; /*Define un grilla */
+  grid-template-rows: min-content 1fr min-content;  /*Especifica el número (y las alturas) de las filas en un diseño de cuadrícula.*/
+  height: 100vh;                                    /*es el tamaño más pequeño que puede tomar una caja sin desbordar su contenido*/
+}                                                   /* 1fr  gestionan automáticamente el espacio tienen algunas diferencias:*/
+
+/*HEADER*/
+
+.header{
+  box-shadow: 0px 5px 20px 35px rgba(0, 0, 0, 0.8); /*Adjunta una o más sombras a un elemento. top/button rogth, left Degradado sombreadp color-rgba*/
+}
+
+.header__discount {
+  background-color: var(--green); /*color de fonde de seccion descuento*/
+  padding: 10px 15px; /*El padding de un elemento es el espacio entre su contenido y su borde. Es una propiedad abreviada para: padding-top / padding-bottom - padding-right / padding-left */
+}
+
+.header__title{
+  display: flex; /* Display felx*/
+  flex-flow: row wrap; /* pagina responsiva */
+  align-items: center; /*Centramos img & texto en eje x*/
+  background-color: var(--blue); /*Asignamos color de fondo*/
+  padding: 10px 15px; /*El padding de un elemento es el espacio entre su contenido y su borde. Es una propiedad abreviada para: padding-top / padding-bottom - padding-right / padding-left */
+  gap: 15px; /*Define el tamaño del espacio entre las filas y las columnas*/
+}
+
+.header__title img{
+  height: 50px; /*Reubicamos el alto del icono imagen*/
+}
+
+.header__title h1 {
+  font-size: 1.5rem; /*Establece el tamaño de una fuente.*/
+  font-weight: 400; /*Establece qué tan gruesos o delgados deben mostrarse los caracteres del texto. en multiplos de 100 */
+  color: var(--white); /*Asignacion de color dese variable*/
+}
+
+.header__nav{
+  background-color: var(--dark-blue); /*Colocamos la seccion del nav */
+  padding: 10px 20px; /*El padding de un elemento es el espacio entre su contenido y su borde*/
+}
+
+.header__nav ul{
+  display: flex; /*Agregamos flex a la caja de navegador*/
+  flex-flow: row wrap;
+  justify-content: end;
+  gap: 15px;
+}
+
+.header__nav a{
+  color: var(--white); /*Agregamos color blanco a los hipervinculos dle nav*/
+}
+
+.header__nav a:hover{
+  text-decoration: underline; /*Decoracion de linea la piso dle texto nav */
+}
+
+
+/* FOOTER*/
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: var(--blue);
+  color: var(--white);
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+footer p{
+  text-align: center; /*centrado del footer*/
+}
+
+footer img{
+  height: 15px; /*configuracion de la imagen github*/
+  position: absolute; /*posicionamos Especifica el tipo de método de posicionamiento utilizado para un elemento*/
+  right: 15px; /*mover 400 pixeles de la izquierda*/
+}
+
+/*Especificacion de boton flotante - div*/
+.floating-button{
+  display: flex; /*Activa el flex en row por fefault (body), para que esta en la árte central*/
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* posisicon fija respecto a su contenedor, body*/
+  background-color: var(--blue); /*Asignacion de color al div-buttom*/
+  height: 20px; /*alto de la caja div-buttom*/
+  width: 20px;  /*ancho de la caja div-buttom*/
+  border-radius: 50%; /*Asignacion de bordes de la caja div-buttom*/
+  padding: 20px; /*espacio entre caracter y la caja div-buttom */
+  font-size: 2.5rem; /*Asignacion del tamaño de la fuente*/
+  font-weight: bold; /*Establece qué tan gruesos o delgados deben mostrarse los caracteres del texto*/
+  top: 0px; /*Ubicacion a 0px de dindtancia del arriba*/
+  bottom: 0px; /*Ubicacion a 0px de dindtancia del arriba*/
+  margin: auto 0; /*centra el div-buttom*/
+  right: 5px; /*empuja 10 px a la derecha*/
+  cursor: pointer; /*Especifica el cursor del ratón que se mostrará cuando se apunte sobre un elemento*/
+}
+
+/* link de boton flotante*/
+.floating-button a{
+  color: var(--white);
+}
+
+.floating-button:hover a{
+  /* background-color: black;
+  border-radius: 50%;
+  width: 20px;
+   */
+   display: flex; /*Activa el flex en row por fefault (body), para que esta en la árte central*/
+   justify-content: center;
+   align-items: center;
+   position: fixed; /* posisicon fija respecto a su contenedor, body*/
+   background-color: var(--dark-blue); /*Asignacion de color al div-buttom*/
+   height: 40px; /*alto de la caja div-buttom*/
+   width: 40px;  /*ancho de la caja div-buttom*/
+   border-radius: 70%; /*Asignacion de bordes de la caja div-buttom*/
+   padding: 30px; /*espacio entre caracter y la caja div-buttom */
+   font-size: 3rem; /*Asignacion del tamaño de la fuente*/
+   font-weight: bold; /*Establece qué tan gruesos o delgados deben mostrarse los caracteres del texto*/
+   top: 0px; /*Ubicacion a 0px de dindtancia del arriba*/
+   bottom: 0px; /*Ubicacion a 0px de dindtancia del arriba*/
+   margin: auto 0; /*centra el div-buttom*/
+   right: 5px; /*empuja 10 px a la derecha*/
+   cursor: pointer; /*Especifica el cursor del ratón que se mostrará cuando se apunte sobre un elemento*/
+
+}
+
+.header__nav:hover a{
+    color: yellow;
+    font-weight: bold;
+    
+    
+}
