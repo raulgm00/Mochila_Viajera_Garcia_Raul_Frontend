@@ -72,6 +72,16 @@ main {
     align-content: space-evenly;
     
   }
+
+/*div*/
+.form__div{
+  display: grid;
+  gap: 15px;
+  grid-template-rows: min-content min-content 1fr;
+  align-content: space-evenly;
+  
+}
+
   /*Labels*/
   .form__input{
     display: grid;
@@ -80,6 +90,12 @@ main {
   
   /*Seccion de checkbox & radio buttom*/
   .form__multi__options{
+    display: grid;
+    margin: 20px 0px;
+  }
+
+   /*Seccion de radio buttom*/
+   .form__one__options{
     display: grid;
     margin: 20px 0px;
   }

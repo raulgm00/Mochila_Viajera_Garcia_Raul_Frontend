@@ -34,7 +34,7 @@
         <section class="main__form__container">
           <form action="../index.html" >
             <section class="input__group">
-              <fieldset class="form__section">
+              <div class="form__div">
                 <label for="name" class="form__input">
                   *Nombre
                   <input type="text" name="nombre" id="name" required />
@@ -45,24 +45,21 @@
                 </label>
                 <label for="comentario" class="form__input">
                   Deje sus comentarios
-                  <textarea
-                    name="comentario"
-                    id="description"
-                    cols="30"
-                    rows="10"
-                    placeholder="Descripción"
+                  <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Descripción"
                   ></textarea>
                 </label>
-              </fieldset>
-              <fieldset class="form__section">
+              </div>
+              <div class="form__section">
                 <label for="type" class="form__input">
-                  *Especie:
-                  <select name="especies" id="type" required>
-                    <option value="Especie" selected>Especie</option>
+                  *Selecciona una Especie:
+                  <select name="especie" id="type" required>
+                    <optgroup label="Espesies">
+                    <option value="Desconocida" selected>Unknow</option>
                     <option value="Super_Humao">Super Humano</option>
                     <option value="Fuego">Fuego</option>
                     <option value="Agua">Agua</option>
                     <option value="Tierra">Tierra</option>
+                  </optgroup>
                   </select>
                 </label>
                 <label for="photo" class="form__input">
@@ -70,6 +67,7 @@
                   <input type="file" name="fotografia" id="photo" />
                 </label>
                 <fieldset>
+                  <legend>Tipo de poderer - Checks </legend>
                   <label class="form__multi__options">
                     Poderes
                     <label for="fly">
@@ -89,19 +87,22 @@
                       Billetera Gorda
                     </label>
                   </label>
-                  <label class="form__multi__options">
+                  </fieldset>
+                  <fieldset>
+                    <legend>Tipo de personaje - Radio buttom</legend>
+                  <label class="form__one__options">
                     Tipo de personaje
                     <label for="hero">
                       <input type="radio" name="tipo-personaje" value="heroe" id="hero" />
                       Héroe / Heroina
                     </label>
                     <label for="villain">
-                      <input type="radio" name="tipo-personaje" value="villano" id="villian" checked/>
+                      <input type="radio" name="tipo-personaje" value="villano" id="villain" />
                       Villano / Villana
                     </label>
                   </label>
                 </fieldset>
-              </fieldset>
+              </div>
             </section>
             <input type="submit" value="Añadir" class="section__buttom" />
           </form>
