@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$color--black: black;
+$color--blue: #005677;
+$color-header: #e5e5e5;
+$reinicia: 0;
+$ancho_cien: 100%;
+* {
+  margin: $reinicia;
+  padding: $reinicia;
+  box-sizing: border-box;
+  font-family: "Robot", serif, sans-serif;
+  color: $color--black;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: $color-header;
+  align-items: center;
+  width: $ancho_cien;
+  margin-bottom: 80px;
+
+  h1 {
+    background-color: $color-header;
+    text-align: center;
+    text-transform: uppercase;
+    width: $ancho_cien;
+    color: $color--blue;
+  }
+}
+
+main {
+  section {
+    h2 {
+      background-color: #c4c4c4;
+      width: 100%;
+      color: #005677;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding-left: 15px;
+    }
+    div {
+      display: flex;
+      padding-left: 25px;
+    }
+  }
+  article {
+    margin: 25px;
+    padding-left: 25px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+
+    ul {
+      li {
+        font-style: italic;
+      }
+    }
+  }
+}
